@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>7-2</title>
+		<meta name="viewport" content="width=device-width">
+		<style>
+			/*①CSSの記述場所*/
+			#canvas1{border:1px solid red;}
+		</style>
+	</head>
+
+	<body>
+		<!-- ②HTMLの記述場所 -->
+		<p><canvas id="canvas1" width="310" height="320"></canvas></p>
+		<script>
+		//③JavaScriptの記述場所
+			var canvas1=document.getElementById("canvas1");
+			var ctx=canvas1.getContext("2d");
+			var finger={x:150,y:150};
+		
+			//★;
+			function mydraw(e){
+				//★;
+				var rect = e.target.getBoundingClientRect();
+				//★;
+				//★;
+				ctx.fillStyle="green";
+				ctx.fillRect(finger.x-2,finger.y-2,4,4);
+			}
+		</script>
+	</body>
+</html>

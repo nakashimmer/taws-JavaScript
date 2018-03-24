@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>2-5-1</title>
+		<meta name="viewport" content="width=device-width">
+		<style>
+			/*①CSSの記述場所*/
+			#output1{border:1px solid red;}
+		</style>
+	</head>
+
+	<body>
+		<!-- ②HTMLの記述場所 -->
+		<★>
+		<p><button onclick="btn1();">押す</button></p>
+		<p id="output1">ここの部分が書き換えられます</p>
+
+		<script>
+			//③JavaScriptの記述場所
+			//★;
+			var output1 = document.getElementById("output1");
+			function btn1(){
+				output1.innerHTML = ★;
+			}
+		</script>
+	</body>
+</html>
