@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>8-2</title>
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+		<h1>BMI</h1>
+		<p>身長：<input type="text" id="h1">cm</p>
+		<p>体重：<input type="text" id="w1">kg</p>
+		<p><button onclick="btn1();">計算</button></p>
+		<p id="result1"></p>
+		<script>
+			var h1 = document.getElementById("h1");
+			var w1 = document.getElementById("w1");
+			var result1 = document.getElementById("result1")
+
+			function btn1(){
+				//文字列を数字に変換
+				h1p=parseInt(h1.value);
+				w1p=parseInt(w1.value);
+				//計算
+				var bmi=w1p/(h1p/100*h1p/100);
+				bmi =Math.round(bmi*10)/10;
+
+				//判定・メッセージ
+				if(bmi<18.5){
+					var msg="低体重かも";
+				}else if(25<bmi){
+					var msg="重いかも";
+				}else{
+					var msg="ちょうどいいかも";
+				}
+
+				//表示
+				result1.innerHTML = "あなたのBMIは"+bmi+"、"+msg;
+			}
+		</script>
+	</body>
+</html>

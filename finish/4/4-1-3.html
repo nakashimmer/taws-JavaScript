@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>4-1-3</title>
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<style>
+			/*①CSSの記述場所*/
+
+		</style>
+	</head>
+
+	<body>
+		<!-- ②HTMLの記述場所 -->
+		<p>
+			<button onclick="start1();">Start</button>
+			<button onclick="finish1();">Finish</button>
+		</p>
+		<p id="time1">経過時間は...</p>
+
+		<script>
+		//③JavaScriptの記述場所
+			var time1 = document.getElementById("time1");
+			var startTime;
+		
+			function start1(){
+				var now=new Date();
+				startTime = now.getTime();
+			}
+		
+			function finish1(){
+				var now=new Date();
+				var finishTime = now.getTime();
+				time1.innerHTML = "経過時間は" + (finishTime - startTime) + "ミリ秒";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>8-1</title>
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+		<p>あなたのきょうの運勢は<span id="result"></span></p>
+		<script>
+			var result = document.getElementById("result");
+			var n=Math.floor(Math.random()*3);
+			if(n===0){var kuji="大吉";}
+			if(n===1){var kuji="中吉";}
+			if(n===2){var kuji="小吉";}
+			result.innerHTML=kuji;
+		</script>
+	</body>
+</html>
