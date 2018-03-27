@@ -6,7 +6,7 @@
 これらのファイルは、東京アプリ・ワークショップが主催する、「JavaScript」ワークショップの教材です。  
 
 CSS3のURLはこちら  
-* <a href="https://www.street-academy.com/myclass/1915?conversion_name=direct_message&tracking_code=d1bcb57ba2bf4e9759627f4212a96a3e">1日まるごとどっぷりCSS3</a>  
+* <a href="https://www.street-academy.com/myclass/284?conversion_name=direct_message&tracking_code=1e14ef45f20ac780ced2a17f0faa76ba">1日まるごとどっぷりJavaScript</a>  
 * <a href="https://tokyoappwork.shop">東京アプリ・ワークショップ</a>
 
 サイトから紹介文を引用
