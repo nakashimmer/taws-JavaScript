@@ -1,5 +1,3 @@
-
-
 # 東京アプリ・ワークショップ「JavaScript」
 ## HTML5 のJavaScriptをどっぷり体験しましょう！【初心者向け】
 
