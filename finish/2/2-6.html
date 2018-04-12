@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>2-6</title>
+	<style>
+		*{margin:0px;padding:0px;}
+		#box1{
+			margin:50px auto;font-size:20px;
+			width:200px;height:200px;line-height:200px;
+			text-align:center;border:1px solid gray;
+		}
+		#box1{
+			transition:all 1s linear;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="box1" onclick="btn1();">いい天気!</div>
+
+	<script>
+		function btn1(){
+			var p1 = document.getElementById("box1");
+			p1.style.color="red";
+			p1.style.color = "red";
+			p1.style.width = "500px";
+			p1.style.height = "300px"; 
+			p1.style.backgroundColor = "green";
+			p1.style.transform="rotate(30deg)";
+		}
+	</script>
+
+</body>
+</html>
