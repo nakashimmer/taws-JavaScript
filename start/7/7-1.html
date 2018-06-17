@@ -6,33 +6,31 @@
 		<meta name="viewport" content="width=device-width">
 		<style>
 			/*①CSSの記述場所*/
-			#canvas1{border:1px solid red;}
+			*{margin:0;padding:0;}
+			body{position:relative;}
+			#box1{
+				background-color:red;
+				width:20px;
+				height:20px;
+				position:absolute;
+			}
 		</style>
 	</head>
 
 	<body>
 		<!-- ②HTMLの記述場所 -->
-		<p><canvas id="canvas1" width="310" height="320"></canvas><p>
+		<div id="box1"></div>
+		
 		<script>
 		//③JavaScriptの記述場所
-			var canvas1=document.getElementById("canvas1");
-			var ctx=canvas1.getContext("2d");
-			var pos={x:150,y:150};
-			var f=false;
-		
-			//★;
+			var box1=document.getElementById("box1");
+	
+			
+
 			function mydraw(e){
-				var rect = e.target.getBoundingClientRect();
-				//★;
-				//★;
-				if(f===true){
-					ctx.fillStyle="red";
-					ctx.fillRect(pos.x-2,pos.y-2,4,4);
-				}
+
+
 			}
-		
-			canvas1.addEventListener("mousedown",function(){f=true;});
-			canvas1.addEventListener("mouseup",function(){f=false;});
 		</script>
 	</body>
 </html>
