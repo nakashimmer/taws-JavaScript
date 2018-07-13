@@ -6,27 +6,24 @@
 		<meta name="viewport" content="width=device-width">
 		<style>
 			/*①CSSの記述場所*/
-			#canvas1{border:1px solid red;}
+			*{margin:0;padding:0;}
+			body{position:relative;}
+			#box1{background-color:red;width:20px;height:20px;position:absolute;}
 		</style>
 	</head>
 
 	<body>
 		<!-- ②HTMLの記述場所 -->
-		<p><canvas id="canvas1" width="310" height="320"></canvas></p>
+		<div id="box1"></div>
+
 		<script>
-		//③JavaScriptの記述場所
-			var canvas1=document.getElementById("canvas1");
-			var ctx=canvas1.getContext("2d");
-			var finger={x:150,y:150};
-		
-			//★;
+			//③JavaScriptの記述場所
+			var box1=document.getElementById("box1");
+
+			document.addEventListener();
+
 			function mydraw(e){
-				//★;
-				var rect = e.target.getBoundingClientRect();
-				//★;
-				//★;
-				ctx.fillStyle="green";
-				ctx.fillRect(finger.x-2,finger.y-2,4,4);
+
 			}
 		</script>
 	</body>
