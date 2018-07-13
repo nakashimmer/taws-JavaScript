@@ -8,7 +8,12 @@
 			/*①CSSの記述場所*/
 			*{margin:0;padding:0;}
 			body{position:relative;}
-			#box1{background-color:red;width:20px;height:20px;position:absolute;}
+			#box1{
+				background-color:red;
+				width:20px;
+				height:20px;
+				position:absolute;
+			}
 		</style>
 	</head>
 
@@ -17,11 +22,11 @@
 		<div id="box1"></div>
 
 		<script>
-			//③JavaScriptの記述場所
+		//③JavaScriptの記述場所
 			var box1=document.getElementById("box1");
 		
 			document.addEventListener("touchmove",mydraw);
-		
+
 			function mydraw(e){
 				e.preventDefault();
 				box1.style.left = e.touches[0].clientX+"px";
