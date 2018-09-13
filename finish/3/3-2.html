@@ -18,18 +18,18 @@
 
 		<script>
 		//③JavaScriptの記述場所
-			var input1 = document.getElementById("input1");
-			var output1 = document.getElementById("output1");
+			const INPUT1 = document.getElementById("input1");
+			const OUTPUT1 = document.getElementById("output1");
 		
-			var correct1 = 50;
+			let correct1 = 50;
 		
 			function btn1(){
-				var pf1 = parseFloat(input1.value);
+				let pf1 = parseFloat(INPUT1.value);
 		
 				if(pf1 === correct1){
-					output1.innerHTML = "正解";
+					OUTPUT1.innerHTML = "正解";
 				}else{
-					output1.innerHTML = "残念";
+					OUTPUT1.innerHTML = "残念";
 				}
 		
 			}

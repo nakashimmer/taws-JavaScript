@@ -16,15 +16,15 @@
 
 		<script>
 		//③JavaScriptの記述場所
-			var date1 = document.getElementById("date1");
-			var now = new Date();
-			var y = now.getFullYear();
-			var m = now.getMonth()+1;
-			var d = now.getDate();
-			var h = now.getHours();
-			var i = now.getMinutes();
-			var s = now.getSeconds();
-			date1.innerHTML = y+"年"+ m+"月"+ d+"日"+ h+"時"+ i+"分"+ s+"秒";
+			const DATE1 = document.getElementById("date1");
+			const NOW = new Date();
+			let y = NOW.getFullYear();
+			let m = NOW.getMonth()+1;
+			let d = NOW.getDate();
+			let h = NOW.getHours();
+			let i = NOW.getMinutes();
+			let s = NOW.getSeconds();
+			DATE1.innerHTML = y+"年"+ m+"月"+ d+"日"+ h+"時"+ i+"分"+ s+"秒";
 		</script>
 	</body>
 </html>

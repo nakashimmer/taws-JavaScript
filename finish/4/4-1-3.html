@@ -20,18 +20,18 @@
 
 		<script>
 		//③JavaScriptの記述場所
-			var time1 = document.getElementById("time1");
-			var startTime;
+			const TIME1 = document.getElementById("time1");
+			let startTime;
 		
 			function start1(){
-				var now=new Date();
-				startTime = now.getTime();
+				const NOW=new Date();
+				startTime = NOW.getTime();
 			}
 		
 			function finish1(){
-				var now=new Date();
-				var finishTime = now.getTime();
-				time1.innerHTML = "経過時間は" + (finishTime - startTime) + "ミリ秒";
+				const NOW=new Date();
+				let finishTime = NOW.getTime();
+				TIME1.innerHTML = "経過時間は" + (finishTime - startTime) + "ミリ秒";
 			}
 		</script>
 	</body>

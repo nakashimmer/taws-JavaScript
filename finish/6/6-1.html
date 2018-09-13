@@ -18,19 +18,19 @@
 		<button onclick="clk4();">全で削除</button>
 	</p>
 	<script>
-		var input1 = document.getElementById("input1");
-		var input2 = document.getElementById("input2");
+		const INPUT1 = document.getElementById("input1");
+		const INPUT2 = document.getElementById("input2");
 	
 		function clk1(){
-			localStorage.setItem(input1.value , input2.value);
+			localStorage.setItem(INPUT1.value , INPUT2.value);
 		}
 	
 		function clk2(){
-			input2.value = localStorage.getItem(input1.value);
+			INPUT2.value = localStorage.getItem(INPUT1.value);
 		}
 	
 		function clk3(){
-			localStorage.removeItem(input1.value);
+			localStorage.removeItem(INPUT1.value);
 		}
 	
 		function clk4(){
