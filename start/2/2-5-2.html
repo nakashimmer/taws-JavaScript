@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- ページには表示しないけどページに関係する情報のグループ -->
 		<meta charset="utf-8">
-		<title>2-4-3</title>
+		<title>2-5-2</title>
 		<meta name="viewport" content="width=device-width">
 		<style>
-			/*①CSSの記述場所*/	
-			#output1,
-			#output2,
-			#output3{border:1px solid red;}
+			/*①CSSの記述場所*/
+			#output1{border:1px solid red;}
 		</style>
 	</head>
 
 	<body>
 		<!-- ②HTMLの記述場所 -->
-		<input type="★" id="input1">
-		<button onclick="btn1();">ボタン1</button>
+		<p>郵便番号：<input type="text" id="input1" ★></p>
+		<p><button onclick="btn1();">押す</button></p>
 		<p id="output1">ここの部分が書き換えられます</p>
 
 		<script>
 			//③JavaScriptの記述場所
 			const INPUT1 = document.getElementById("input1");
-			const OUTPUT1 = document.getElementById("output1");			
+			const OUTPUT1 = document.getElementById("output1");
 			function btn1(){
 				OUTPUT1.innerHTML = INPUT1.value;
 			}
