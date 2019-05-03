@@ -15,18 +15,18 @@
 		<h1>ビデオ</h1>
 		<p><video id="video1" src="media/video.m4v" width=320></video></p>
 		<p>
-			<button onclick="VIDEO1.play();">再生</button>
-			<button onclick="VIDEO1.pause();">一旦停止 </button>
-			<button onclick="VIDEO1.currentTime=0;video1.play();">最初から</button>
-			<button onclick="VIDEO1.volume -= 0.2;">音を小さく</button>
-			<button onclick="VIDEO1.volume += 0.2;">音を大きく</button>
-			<button onclick="VIDEO1.playbackRate += 0.5;">早く</button>	
-			<button onclick="VIDEO1.playbackRate -= 0.5;">ゆっくり</button>
+			<button onclick="video1.play();">再生</button>
+			<button onclick="video1.pause();">一旦停止 </button>
+			<button onclick="video1.currentTime=0;video1.play();">最初から</button>
+			<button onclick="video1.volume -= 0.2;">音を小さく</button>
+			<button onclick="video1.volume += 0.2;">音を大きく</button>
+			<button onclick="video1.playbackRate += 0.5;">早く</button>	
+			<button onclick="video1.playbackRate -= 0.5;">ゆっくり</button>
 		</p>
 
 		<script>
 		//③JavaScriptの記述場所
-				const VIDEO1 = document.getElementById("video1");
+				const video1 = document.getElementById("video1");
 		</script>
 	</body>
 </html>

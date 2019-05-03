@@ -15,17 +15,17 @@
 		<h1>オーディオ</h1>
 		<p><audio id="audio1" src="media/audio.mp3"></audio></p>
 		<p>
-			<button onclick="AUDIO1.play();">再生</button>
-			<button onclick="AUDIO1.pause();">停止</button>
-			<button onclick="AUDIO1.currentTime=0;audio1.play();">最初から</button>
-			<button onclick="AUDIO1.volume -= 0.2;">音を小さく</button>
-			<button onclick="AUDIO1.volume += 0.2;">音を大きく</button>
-			<button onclick="AUDIO1.playbackRate += 0.5;">早く</button>	
-			<button onclick="AUDIO1.playbackRate -= 0.5;">ゆっくり</button>
+			<button onclick="audio1.play();">再生</button>
+			<button onclick="audio1.pause();">停止</button>
+			<button onclick="audio1.currentTime=0;audio1.play();">最初から</button>
+			<button onclick="audio1.volume -= 0.2;">音を小さく</button>
+			<button onclick="audio1.volume += 0.2;">音を大きく</button>
+			<button onclick="audio1.playbackRate += 0.5;">早く</button>	
+			<button onclick="audio1.playbackRate -= 0.5;">ゆっくり</button>
 		</p>
 		<script>
 		//③JavaScriptの記述場所
-			const AUDIO1 =document.getElementById("audio1");
+			const audio1 =document.getElementById("audio1");
 		</script>
 	</body>
 </html>
