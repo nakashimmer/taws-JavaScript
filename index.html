@@ -3,13 +3,16 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>東京アプリ・ワークショップ「JavaScript」</title>
+		<title>一日まるごとどっぷり「JavaScript」</title>
 		<meta name="viewport" content="width=device-width">
 		<style>
 			*{margin:0;padding:0;font-size:16px;line-height:30px;}
 			h1{text-align:center;font-size:2em;background-color:gray;color:white;line-height:2em;}
 			main{max-width:800px;margin:0 auto;}
-			section{margin:0em;padding:0.5em;}
+			main>section{
+				margin:1em;padding:0.5em;
+				border:1px solid gray;
+			}
 			ol,ul{margin-left:2em;}
 			p{margin-bottom:0.5em;
 				text-align:justify;
@@ -30,19 +33,44 @@
 				border-radius:1em;
 			}
 			.flex{display:flex;}
-			.flex li{list-style:none;}
+			.flex li{list-style:none;margin:0 1em;}
+			.flex div{flex:1;}
 			summary h3{display:inline;}
+			.border{border:1px solid gray;padding:2px;}
 		</style>
 	</head>
 	<body>
 		<header>
-			<h1>東京アプリ・ワークショップ「JavaScript」</h1>
+			<h1>一日まるごとどっぷり「JavaScript」</h1>
 		</header>
 
 		<main>
 			<section>
 				<h2>教材ファイル</h2>
 				<p>事前に<a href="https://github.com/nakashimmer/tawsJavaScript/archive/master.zip">zipファイルをダウンドーロ→解凍(展開)すること。</a></p>
+			</section>
+
+			<section>
+				<h2>1.オリエンテーション</h2>
+				<ol>
+					<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/kesan/index.html">計算</a></li>
+					<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/bmi/index.html">BMI</a></li>
+					<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/uranai/index.html">占い</a></li>
+					<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/janken/index.html">じゃんけん</a></li>
+					<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/maimai/index.html">ゲーム</a></li>
+	
+					<li><a href="https://nakashimmer.github.io/showcase/JS/dom/css/index3.html">CSSをコントロール</a></li>
+	
+					<li><a href="https://nakashimmer.github.io/showcase/JS/deviceAccess/gps/index.html">GPS</a></li>
+	
+					<li><a
+							href="https://nakashimmer.github.io/showcase/JS/deviceAccess/speechSynthesis/recognition/index.html">音声認識</a>
+					</li>
+					<li><a href="https://nakashimmer.github.io/showcase/JS/machineLearning/pose/index.htmll">骨格認識(機械学習)</a></li>
+	
+					<li><a href="http://hexgl.bkcore.com/play/">3Dレーシング</a></li>
+					<li><a href="https://nakashimmer.github.io/showcase/">HTML5 SHOWCASE</a></li>
+				</ol>
 			</section>
 
 			</section>
@@ -90,31 +118,32 @@
 			</section>
 
 			<section>
-				<h2>ご案内</h2>
-				<section>
-					<h3>ストアカ</h3>
-					<ul>
-						<li>「１日まるごとどっぷりHTML5入門」：HTML5とはなにかから始まり、HTML、CSS、JavaScriptのそれぞれをわかりやすく、実際に制作しながら学んでいく入門用のワークショップ。</li>
-						<li>「１日まるごとどっぷりCSS3」：ボックスモデルからセレクタ、プロパティ、擬似クラス、CSS3アニメーションと3次元の表示までを学ぶ。</li>
-						<li>「１日まるごとどっぷりJavaScript」：JavaScriptの基本から変数、関数、日付や数学のオブジェクト、マルチメディアコントロール、データ保存などを学ぶ。</li>
-					</ul>
-					<h3>オフィシャルページ</h3>
-					<ul>
-						<li><a href="https://tokyoappwork.shop/">オフィシャルページ</a>の「サンプル」では、ゆるくHTML5のサンプルファイルを紹介。</li>
-						<li><a href="https://www.facebook.com/tokyoAppWorkShop/">Facebookページ</a>では、ワークショップの活動や講習風景を掲載しています。（いいねボタンをお願いします！）</li>
-						<li><a href="https://www.facebook.com/groups/welovehtml5/">Facebookグループ「We Love HTML5」</a>では、HTML5の好きな人々のグループです。主に私がHTML5にまつわる情報を流しています。ご参加お待ちしています。</li>
-					</ul>
-					<h3>検定試験</h3>
-					<ul>
-						<li><a href="https://webtechpromo.org/">一般社団法人Web技術振興協会</a>では、HTLM5の検定試験を実施しています。さらなる学びに利用してください。オフィシャルページでは検定の概要説明、募集要項、勉強の仕方をご案内しています。</li>
-						<li><a href="https://www.facebook.com/webTechPromo.org/">Facebookページ</a>では、ニュース、検定の進捗状況などを掲載しています。（いいねボタンお願いします！）</li>
-					</ul>
-				</section>
+				<h2>7.ご案内</h2>
+				<ul class="flex">
+					<li><a target="_blank"
+							href="https://www.street-academy.com/steachers/1274?conversion_name=direct_message&tracking_code=f3037c532c76e32eb5636350d0147bc9">ストアカ</a>
+					</li>
+					<li><a target="_blank" href="https://www.facebook.com/WholeDayHTML5LectureRoom/">講座FBページ</a></li>
+					<li><a target="_blank" href="https://www.facebook.com/groups/WholeDayHTML5Members">講座参加者グループ</a></li>
+				</ul>
+				<ul class="flex">
+					<li><a target="_blank" href="https://www.facebook.com/welovehtml5/">情報ページ(We love HTML5)</a></li>
+					<li><a target="_blank" href="https://nakashimmer.github.io/showcase/">HTML5 SHOW CASE</a></li>
+				</ul>
+				<ul class="flex">
+					<li><a target="_blank" href="https://webtechpromo.org/">HTML5検定試験</a></li>
+					<li><a target="_blank" href="https://www.amazon.co.jp/dp/4802096607/">「なかしまぁ先生のHTML5教室」</a></li>
+				</ul>
+				<ul class="flex">
+					<li><a target="_blank" href="https://ja.monaca.io/">Monaca(スマホアプリ制作)</a></li>
+					<li><a target="_blank" href="https://electronjs.org/">Electron(デスクトップアプリ制作)</a></li>
+					<li><a target="_blank" href="https://obniz.io/ja/">Obniz(IoT)</a></li>
+				</ul>
 			</section>
 
 		</main>
 		<footer>
-			<p><small>(C)東京アプリ・ワークショップ</small></p>
+			<p><small>(C)中島俊治</small></p>
 		</footer>
 	</body>
 </html>
