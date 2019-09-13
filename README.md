@@ -1,3 +1,3 @@
-# 東京アプリ・ワークショップ「JavaScript」
+# 一日まるごとどっぷり「JavaScript」
 
 https://nakashimmer.github.io/tawsJavaScript/
