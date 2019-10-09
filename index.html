@@ -10,7 +10,7 @@
 			h1{text-align:center;font-size:2em;background-color:gray;color:white;line-height:2em;}
 			main{max-width:800px;margin:0 auto;}
 			main>section{
-				margin:1em;padding:0.5em;
+				margin:0.5em;padding:0.5em;
 				border:1px solid gray;
 			}
 			ol,ul{margin-left:2em;}
@@ -26,15 +26,10 @@
 				background-color:gray;color:white;
 				text-align:center;margin:0;line-height:2em;
 			}
-			blockquote{
-				background-color:#eee;
-				margin:1em;
-				padding:1em;
-				border-radius:1em;
-			}
+
 			.flex{display:flex;}
-			.flex li{list-style:none;margin:0 1em;}
-			.flex div{flex:1;}
+			.flex li{list-style:none;}
+			.flex section{flex:1;border:1px solid gray;margin:0.5em;border-radius: 0.5em;padding:0.5em;}
 			summary h3{display:inline;}
 			.border{border:1px solid gray;padding:2px;}
 		</style>
@@ -45,11 +40,13 @@
 		</header>
 
 		<main>
+			
 			<section>
 				<h2>教材ファイル</h2>
 				<p>事前に<a href="https://github.com/nakashimmer/tawsJavaScript/archive/master.zip">zipファイルをダウンドーロ→解凍(展開)すること。</a></p>
 			</section>
 
+			<div class="flex">
 			<section>
 				<h2>1.オリエンテーション</h2>
 				<ol>
@@ -71,52 +68,62 @@
 					<li><a href="http://hexgl.bkcore.com/play/">3Dレーシング</a></li>
 					<li><a href="https://nakashimmer.github.io/showcase/">HTML5 SHOWCASE</a></li>
 				</ol>
+					<h4>1.準備</h4>
+					<ul>
+						<li><a target="_blank" href="materials/1/1-1.html">1-1.JSの配置</a></li>
+					</ul>
 			</section>
 
 			</section>
 			<section>
-				<h3>サンプル完成品</h3>
-				<section>
-	
-					<h4>1.準備</h4>
-					<ul class="flex">
-						<li><a target="_blank" href="finish/1/1-1.html">1-1</a></li>
-					</ul>
+
+				
 					<h4>2.コンテンツ操作</h4>
-					<ul class="flex">
-						<li><a target="_blank" href="finish/2/2-2.html">2-2</a></li>
-						<li><a target="_blank" href="finish/2/2-3.html">2-3</a></li>
-						<li><a target="_blank" href="finish/2/2-4-1.html">2-4-1</a></li>
-						<li><a target="_blank" href="finish/2/2-4-2.html">2-4-2</a></li>
-						<li><a target="_blank" href="finish/2/2-4-3.html">2-4-3</a></li>
-						<li><a target="_blank" href="finish/2/2-5.html">2-5</a></li>
-					</ul>
-					<h4>3.変数と文法</h4>
-					<ul class="flex">
-						<li><a target="_blank" href="finish/3/3-1-1.html">3-1-1</a></li>
-						<li><a target="_blank" href="finish/3/3-1-2.html">3-1-2</a></li>
-						<li><a target="_blank" href="finish/3/3-1-3.html">3-1-3</a></li>
-						<li><a target="_blank" href="finish/3/3-2.html">3-2</a></li>
-					</ul>
-					<h4>4.オブジェクト</h4>
-					<ul class="flex">
-						<li><a target="_blank" href="finish/4/4-1-1.html">4-1-1</a></li>
-						<li><a target="_blank" href="finish/4/4-1-2.html">4-1-2</a></li>
-						<li><a target="_blank" href="finish/4/4-1-3.html">4-1-3</a></li>
-						<li><a target="_blank" href="finish/4/4-2.html">4-2</a></li>
-					</ul>
-					<h4>5.マルチメディアとデータ保存</h4>
-					<ul class="flex">
-						<li><a target="_blank" href="finish/5/5-1-1.html">5-1-1</a></li>
-						<li><a target="_blank" href="finish/5/5-1-2.html">5-1-2</a></li>
-						<li><a target="_blank" href="finish/5/5-2.html">5-2</a></li>
-					</ul>
-					<h4>6.座標の取得・イベント</h4>
-					<ul class="flex">
-						<li><a target="_blank" href="finish/6/6-1.html">6-1</a></li>
+					<ul>
+						<li><a target="_blank" href="materials/2/2-1.html">2-1.出力</a></li>
+						<li><a target="_blank" href="materials/2/2-2.html">2-2.ボタン</a></li>
+						<li><a target="_blank" href="materials/2/2-4-1.html">2-4-1.入力の部品</a></li>
+						<li><a target="_blank" href="materials/2/2-4-2.html">2-4-2.placeholder</a></li>
+						<li><a target="_blank" href="materials/2/2-4-3.html">2-4-3.type属性</a></li>
+						<li><a target="_blank" href="materials/2/2-5.html">2-5.CSSの操作</a></li>
 					</ul>
 				</section>
-			</section>
+				<section>
+					<h4>3.変数と文法</h4>
+					<ul>
+						<li><a target="_blank" href="materials/3/3-1-1.html">3-1-1.var</a></li>
+						<li><a target="_blank" href="materials/3/3-1-2.html">3-1-2.let</a></li>
+						<li><a target="_blank" href="materials/3/3-1-3.html">3-1-3.const</a></li>
+						<li><a target="_blank" href="materials/3/3-2-1.html">3-2-1.計算</a></li>
+						<li><a target="_blank" href="materials/3/3-2-2.html">3-2-2.文字列の連結</a></li>
+						<li><a target="_blank" href="materials/3/3-3.html">3-3.if文</a></li>
+					</ul>
+				</div>
+				<div class="flex">
+					<section>
+					<h4>4.オブジェクト</h4>
+					<ul>
+						<li><a target="_blank" href="materials/4/4-1-1.html">4-1-1.日付</a></li>
+						<li><a target="_blank" href="materials/4/4-1-2.html">4-1-2.時計</a></li>
+						<li><a target="_blank" href="materials/4/4-1-3.html">4-1-3.ストップウオッチ</a></li>
+						<li><a target="_blank" href="materials/4/4-2.html">4-2.Math</a></li>
+					</ul>
+						</section>
+						<section>
+					<h4>5.マルチメディアとデータ保存</h4>
+					<ul>
+						<li><a target="_blank" href="materials/5/5-1-1.html">5-1-1.音声</a></li>
+						<li><a target="_blank" href="materials/5/5-1-2.html">5-1-2.映像</a></li>
+						<li><a target="_blank" href="materials/5/5-2.html">5-2.データ保存</a></li>
+					</ul>
+						</section>
+						<section>
+					<h4>6.座標の取得・イベント</h4>
+					<ul>
+						<li><a target="_blank" href="materials/6/6-1.html">6-1.マウス座標</a></li>
+					</ul>
+				</section>
+			</div>
 
 			<section>
 				<h2>7.ご案内</h2>

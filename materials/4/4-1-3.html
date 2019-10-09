@@ -31,7 +31,7 @@
 			function finish1(){
 				const now=new Date();
 				let finishTime = now.getTime();
-				time1.innerHTML = "経過時間は" + (finishTime - startTime) + "ミリ秒";
+				time1.innerHTML = "経過時間は" + (finishTime - startTime)/1000 + "秒";
 			}
 		</script>
 	</body>
