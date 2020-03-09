@@ -2,13 +2,18 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>3-1-3</title>
+		<title>定数const
+
+		</title>
 	</head>
 	<body>
+		<p id="output1">出力</p>
 		<script>
+			const output1 = document.getElementById("output1");
+
 			const pi = 3.14159;
 			pi = 3;
-			document.write(pi);
+			output1.innerHTML = pi;
 		</script>
 	</body>
 </html>

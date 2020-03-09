@@ -5,11 +5,14 @@
 		<title>3-1-1</title>
 	</head>
 	<body>
+		<p id="output1">出力</p>
 		<script>
+			const output1 = document.getElementById("output1");
+
 			var a = 1;
-			var b = 1;
+			var b = 2;
 			var c = a + b;
-			document.write(c);
+			output1.innerHTML = c;
 		</script>
 	</body>
 </html>
