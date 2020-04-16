@@ -2,26 +2,30 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>※２：日付</title>
+		<title>*2：マウス座標</title>
+		<style>
+			*{margin:0;padding:0;}
+			body{position:relative;}
+			#box1{
+				background-color:red;
+				width:20px;
+				height:20px;
+				position:absolute;
+			}
+		</style>
 	</head>
 
 	<body>
-		<p id="date1"></p>
+		<div id="box1"></div>
 
 		<script>
-			const date1 = document.getElementById("date1");
+			const box1=document.getElementById("box1");
 
-			//※２
-			setInterval(tokei,1000);
-			function tokei(){
-				const now = new Date();
-				let y = now.getFullYear();
-				let m = now.getMonth()+1;
-				let d = now.getDate();
-				let h = now.getHours();
-				let i = now.getMinutes();
-				let s = now.getSeconds();
-				date1.innerHTML = y+"年"+ m+"月"+ d+"日"+ h+"時"+ i+"分"+ s+"秒";
+			document.addEventListener("mousemove",mydraw);
+
+			function mydraw(e){
+				box1.style.left = e.clientX+"px";
+				box1.style.top = e.clientY+"px";
 			}
 		</script>
 	</body>

@@ -2,18 +2,31 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>※２：日付</title>
+		<title>*2：マウス座標</title>
+		<style>
+			*{margin:0;padding:0;}
+			body{position:relative;}
+			#box1{
+				background-color:red;
+				width:20px;
+				height:20px;
+				position:absolute;
+			}
+		</style>
 	</head>
 
 	<body>
-		<p id="date1"></p>
+		<div id="box1"></div>
 
 		<script>
-			const date1 = document.getElementById("date1");
+			//③JavaScriptの記述場所
+			const box1=document.getElementById("box1");
 
-			//※２
+			//★
 
-			date1.innerHTML = y+"年"+ m+"月"+ d+"日"+ h+"時"+ i+"分"+ s+"秒";
+			function mydraw(e){
+				//★
+			}
 		</script>
 	</body>
 </html>
