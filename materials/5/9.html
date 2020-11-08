@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>９時限目：Localストレージ</title>	
-	<style>
-	</style>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>９時限目：Localストレージ</title>	
+		<style>
+			/*①CSSの記述場所*/
+		</style>
+	</head>
 
-<body>
-	<h1>９時限目：Localストレージ</h1>
-	<p>キー：<input type="text" id="input1"></p>	
-	<p>値　：<input type="text" id="input2"></p>
-	<p>
-		<button onclick="clk1();">保存</button>
-		<button onclick="clk2();">読出</button>
-		<button onclick="clk3();">削除</button>
-		<button onclick="clk4();">全て削除</button>
-	</p>
-	<script>
-		const input1 = document.getElementById("input1");
-		const input2 = document.getElementById("input2");
-	
-		function clk1(){
-			localStorage.setItem(input1.value , input2.value);
-		}
-	
-		function clk2(){
-			input2.value = localStorage.getItem(input1.value);
-		}
-	
-		function clk3(){
-			localStorage.removeItem(input1.value);
-		}
-	
-		function clk4(){
-			localStorage.clear();
-		}
-	</script>
-</body>
+	<body>
+		<!-- ②HTMLの記述場所 -->
+		<h1>９時限目：Localストレージ</h1>
+		<p>キー：<input type="text" id="input1"></p>	
+		<p>値　：<input type="text" id="input2"></p>
+		<p>
+			<button onclick="clk1();">保存</button>
+			<button onclick="clk2();">読出</button>
+			<button onclick="clk3();">削除</button>
+			<button onclick="clk4();">全て削除</button>
+		</p>
+		<script>
+			//③JavaScriptの記述場所
+			const input1 = document.getElementById("input1");
+			const input2 = document.getElementById("input2");
+		
+			function clk1(){
+				localStorage.setItem(input1.value , input2.value);
+			}
+		
+			function clk2(){
+				input2.value = localStorage.getItem(input1.value);
+			}
+		
+			function clk3(){
+				localStorage.removeItem(input1.value);
+			}
+		
+			function clk4(){
+				localStorage.clear();
+			}
+		</script>
+	</body>
 </html>
