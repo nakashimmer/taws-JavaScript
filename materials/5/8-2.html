@@ -4,24 +4,23 @@
 		<meta charset="utf-8">
 		<title>８時限目：マルチメディア 2.映像</title>
 	</head>
-
 	<body>
 		<!-- ②HTMLの記述場所 -->
 		<h1>2.映像</h1>
-		<p><video id="video1" src="media/video.mp4" width=320></video></p>
+		<p><video id="video1" width=320></video></p>
 		<p>
 			<button onclick="video1.play();">再生</button>
 			<button onclick="video1.pause();">一旦停止 </button>
 			<button onclick="video1.currentTime=0;video1.play();">最初から</button>
 			<button onclick="video1.volume -= 0.2;">音を小さく</button>
 			<button onclick="video1.volume += 0.2;">音を大きく</button>
-			<button onclick="video1.playbackRate += 0.5;">早く</button>	
+			<button onclick="video1.playbackRate += 0.5;">早く</button>
 			<button onclick="video1.playbackRate -= 0.5;">ゆっくり</button>
 		</p>
-
 		<script>
 			//③JavaScriptの記述場所
 			const video1 = document.getElementById("video1");
+			video1.src = "media/video.mp4";
 		</script>
 	</body>
 </html>
